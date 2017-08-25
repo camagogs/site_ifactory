@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#navegador_superior{
+    background-color: #212121ff;    
+    height: 30px;
+
+}
+#buscador{
+    float: right;
+    margin-right: 90px;
+    margin-top: 4px;
+
+}
+#b_buscar{
+    background-color: white;
+    width: 30px;
+    border-style: none;
+    float: right;     
+    margin-top: 1px;
+    height: 19px;
+    border-color:  #212121ff;   
+
+}
+
+#barra{
+   border-color: white;
+   border-style: none;
+   height: 19px;
+   width: 40px; 
+   transition: width 1s;
+}
+#barra:hover{
+    width: 200px;
+}
+#barra:active{
+        width: 200px;
+}
+#menu_bts{
+    margin-top: 30px;
+    float: right;
+    display: block;
+    margin-right:190px;
+    margin-bottom: 30px;  
+}
+#bt1,#bt2,#bt3,#bt4,#bt5,#bt6,#bt7{
+    border-style: none;
+    background-color: white;
+    font-size: 15px;
+    margin-left: 80px; 
+    
+}
+#imagens{
+    margin: auto;
+
+}
+.bolas{
+    margin-right: 650px;
+    position: static;
+    margin-left: 630px;
+
+}
+.cir1,.cir2,.cir3{
+    height: 11px;
+    width: 11px;
+    border-radius: 5px;
+    border: solid;
+    border: 3px;
+    float: right;
+    margin: 5px;
+    cursor: pointer;
+}
+.cir3{
+    background-color: grey;
+}
+.cir2,.cir1{
+    background-color: lightgrey;
+}
+.produtos{
+
+    margin-top: 70px;
+    border: 1px;
+    border-style: solid;
+    border-color: lightgrey white white white;
+
+}
+
