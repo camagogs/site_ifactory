@@ -9,12 +9,16 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-    <nav id ="navegador_superior">
-       <div id="buscador">
-            <button id="b_buscar" ><i class="fa fa-search"></i></button>
-            <input id="barra" type="text" placeholder="search">
-       </div>
-    </nav>
+        <nav id ="navegador_superior">   
+                
+            <div id="buscador">
+                <button id="b_buscar" ><i class="fa fa-search"></i></button>
+                <input id="barra" type="text" placeholder="search">
+            </div>
+        </nav>
+        <div id ="logo_im">
+                <img src="./imagens/logo.png" alt="">
+        </div> 
     <div id="menu_bts">
             <button id="bt1">menu1</button>
             <button id="bt2">menu2</button>
@@ -24,15 +28,110 @@
             <button id="bt6">menu6</button>
             <button id="bt7">menu7</button>
     </div>
-    <div id="imagens">
-            <img src="./imagens/img1.png" alt="">    
-
+    <div id="slide_show">
+        <button id="b_esq"><i class="fa fa-chevron-left"></i></button>
+        <button id="b_dir"><i class="fa fa-chevron-right"></i></button>
+        <div id="imagens">
+             <img id="img1" src="./imagens/img1.png" alt="">
+             <img id="img2" src="./imagens/img2.jpg" alt="">
+             <img id="img3" src="./imagens/img4.jpg" alt="">    
+        </div>
     </div>
+
     <div class="bolas">
             <div class="cir1"></div>
             <div class="cir2"></div>
             <div class="cir3"></div>
         </div>
-
+        <footer id="footer">
+                dsdaas
+        </footer>
+    <script>
+        var i = 0;
+         $("#b_esq").click(function () {
+                if(i===0) {
+                    $("#img1").fadeOut();
+                    $("#img2").fadeOut();
+                    $("#img3").fadeIn();
+                    $(".cir1").css("background-color","grey");
+                    $(".cir3").css("background-color","lightgrey");
+                    $(".cir2").css("background-color","lightgrey");
+                }
+                if(i===1){
+                    $("#img1").fadeOut();
+                    $("#img3").fadeOut();
+                    $("#img2").fadeIn();
+                    $(".cir2").css("background-color","grey");
+                    $(".cir1").css("background-color","lightgrey");
+                    $(".cir3").css("background-color","lightgrey");
+                }
+                if(i===2){
+                    $("#img2").fadeOut();
+                    $("#img3").fadeOut();
+                    $("#img1").fadeIn();
+                    $(".cir3").css("background-color","grey");
+                    $(".cir1").css("background-color","lightgrey");
+                    $(".cir2").css("background-color","lightgrey");
+                }
+                i=i+1;
+                if(i>2){
+                    i=0;
+                }
+            });
+        $("#b_dir").click(function () {
+            if(i===0) {
+                $("#img1").fadeOut();
+                $("#img3").fadeOut();
+                $("#img2").fadeIn();
+                $(".cir2").css("background-color","grey");
+                $(".cir3").css("background-color","lightgrey");
+                $(".cir1").css("background-color","lightgrey");
+                }
+            if(i===1){
+                $("#img1").fadeOut();
+                $("#img2").fadeOut();
+                $("#img3").fadeIn();
+                $(".cir1").css("background-color","grey");
+                $(".cir2").css("background-color","lightgrey");
+                $(".cir3").css("background-color","lightgrey");
+            }
+            if(i===2){
+                $("#img2").fadeOut();
+                $("#img3").fadeOut();
+                $("#img1").fadeIn();
+                $(".cir3").css("background-color","grey");
+                $(".cir1").css("background-color","lightgrey");
+                $(".cir2").css("background-color","lightgrey");
+            }
+            i=i+1;
+            if(i>2){
+                i=0;
+            }
+        });     
+        $(".cir1").click(function () {
+            $("#img1").fadeOut();
+            $("#img2").fadeOut();
+            $("#img3").fadeIn();
+            $(".cir1").css("background-color","grey");
+            $(".cir2").css("background-color","lightgrey");
+            $(".cir3").css("background-color","lightgrey");
+        });
+        $(".cir2").click(function () {
+            $("#img1").fadeOut();
+            $("#img3").fadeOut();
+            $("#img2").fadeIn();
+            $(".cir2").css("background-color","grey");
+            $(".cir1").css("background-color","lightgrey");
+            $(".cir3").css("background-color","lightgrey");
+        });
+        $(".cir3").click(function () {
+            $("#img2").fadeOut();
+            $("#img3").fadeOut();
+            $("#img1").fadeIn();
+            $(".cir3").css("background-color","grey");
+            $(".cir1").css("background-color","lightgrey");
+            $(".cir2").css("background-color","lightgrey");
+        });
+    </script>
     </body>
 </html>

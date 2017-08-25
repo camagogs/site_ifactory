@@ -4,7 +4,7 @@
 }
 
 #navegador_superior{
-    background-color: #212121ff;    
+    background-color: #212121;    
     height: 30px;
 
 }
@@ -20,7 +20,7 @@
     border-style: none;
     float: right;     
     margin-top: 1px;
-    height: 19px;
+    height: 18px;
     border-color:  #212121ff;   
 
 }
@@ -28,18 +28,23 @@
 #barra{
    border-color: white;
    border-style: none;
-   height: 19px;
+   height: 18px;
    width: 40px; 
    transition: width 1s;
+   padding-left: 10px;
 }
-#barra:hover{
+#barra:focus{
     width: 200px;
+    outline: none;
 }
-#barra:active{
-        width: 200px;
+#logo_im{
+       float: left;
+       width: 50px;    
+       margin-left: 90px; 
 }
+
 #menu_bts{
-    margin-top: 30px;
+    margin-top: 40px;
     float: right;
     display: block;
     margin-right:190px;
@@ -49,17 +54,37 @@
     border-style: none;
     background-color: white;
     font-size: 15px;
-    margin-left: 80px; 
+    margin-left: 60px; 
+    cursor: pointer;
+    outline: none;
+    padding-bottom: 8px; 
+}
+
+#bt2,#bt3,#bt4,#bt5,#bt6,#bt7{
+    color: #565252; 
+}
+#bt1:hover,#bt2:hover,#bt3:hover,#bt4:hover,#bt5:hover,#bt6:hover,#bt7:hover{
     
+    border-bottom: 4px solid #212121;
+}
+
+#bt1{
+    font-weight: bold;
+    border-bottom-color: black;
 }
 #imagens{
     margin: auto;
 
 }
+#img1,#img2,#img3{ 
+    position: absolute;
+    z-index: -1;
+    margin-top: 110px;
+    margin-right: 
+}
 .bolas{
-    margin-right: 650px;
-    position: static;
-    margin-left: 630px;
+    margin-right: 600px;
+    margin-top: 20px;
 
 }
 .cir1,.cir2,.cir3{
@@ -71,6 +96,9 @@
     float: right;
     margin: 5px;
     cursor: pointer;
+    display: fixed;
+    margin-top: 630px;
+      
 }
 .cir3{
     background-color: grey;
@@ -78,12 +106,31 @@
 .cir2,.cir1{
     background-color: lightgrey;
 }
-.produtos{
-
-    margin-top: 70px;
-    border: 1px;
-    border-style: solid;
-    border-color: lightgrey white white white;
+#b_esq,#b_dir{
+    height: 45px;
+    width: 45px;
+    font-size: 22px;    
+    border: none;
+    margin-top: 130px;
+    cursor: pointer;  
+    position: absolute;
+    margin-top: 300px;
+    box-shadow: -3px 0px 30px 1px #212121;
+    outline:none;
+}
+#b_dir{
+    margin-left: 960px;
+    border-bottom: 2px solid transparent;
 
 }
 
+
+#img2,#img3{
+    display: none;
+
+}
+#footer{
+    background-color: #212121;
+    margin-top: 788px;
+    height: 82px;
+}
