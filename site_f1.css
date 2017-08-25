@@ -79,8 +79,7 @@
 #img1,#img2,#img3{ 
     position: absolute;
     z-index: -1;
-    margin-top: 110px;
-    margin-right: 
+ 
 }
 .bolas{
     margin-right: 600px;
@@ -99,6 +98,9 @@
     display: fixed;
     margin-top: 630px;
       
+}
+#slide_show{
+    position: relative;
 }
 .cir3{
     background-color: grey;
