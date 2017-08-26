@@ -101,10 +101,13 @@
 }
 #slide_show{
     position: relative;
+<<<<<<< HEAD
     top: 100px;
     right: 110px;
     height: 200px;
     background-color: red;
+=======
+>>>>>>> 68b1c8f60283f2e61c94f0dc2c0d606b1387f852
 }
 .cir3{
     background-color: grey;
@@ -137,6 +140,12 @@
 }
 #footer{
     background-color: #212121;
+<<<<<<< HEAD
     margin-top: 604px;
     height: 62px;
 }
+=======
+    margin-top: 788px;
+    height: 82px;
+}
+>>>>>>> 68b1c8f60283f2e61c94f0dc2c0d606b1387f852
