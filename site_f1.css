@@ -2,11 +2,29 @@
     margin: 0;
     padding: 0;
 }
-
+#contato{
+    position: absolute;
+    width: 100px;
+    margin-top: 5px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+#contato a{
+    color: white;
+    top: 5px;
+}
+#contato i {
+    color: white;
+}
+#b_icone{
+    float: right;
+    background-color: #212121;
+    border-style: none;
+}
 #navegador_superior{
-    background-color: #212121;    
+    background-color: #212121ff;    
     height: 30px;
-
+    position: relative;
 }
 #buscador{
     float: right;
@@ -29,7 +47,7 @@
    border-color: white;
    border-style: none;
    height: 18px;
-   width: 40px; 
+   width: 55px; 
    transition: width 1s;
    padding-left: 10px;
 }
@@ -47,14 +65,14 @@
     margin-top: 40px;
     float: right;
     display: block;
-    margin-right:190px;
+    margin-right:130px;
     margin-bottom: 30px;  
 }
 #bt1,#bt2,#bt3,#bt4,#bt5,#bt6,#bt7{
     border-style: none;
     background-color: white;
     font-size: 15px;
-    margin-left: 60px; 
+    margin-left: 20px; 
     cursor: pointer;
     outline: none;
     padding-bottom: 8px; 
@@ -96,18 +114,15 @@
     margin: 5px;
     cursor: pointer;
     display: fixed;
-    margin-top: 630px;
+    margin-top: 410px;
       
 }
 #slide_show{
     position: relative;
-<<<<<<< HEAD
     top: 100px;
     right: 110px;
     height: 200px;
-    background-color: red;
-=======
->>>>>>> 68b1c8f60283f2e61c94f0dc2c0d606b1387f852
+
 }
 .cir3{
     background-color: grey;
@@ -123,12 +138,13 @@
     margin-top: 130px;
     cursor: pointer;  
     position: absolute;
-    margin-top: 300px;
+    margin-top: 250px;
     box-shadow: -3px 0px 30px 1px #212121;
     outline:none;
+   
 }
 #b_dir{
-    margin-left: 960px;
+    margin-left: 1235px;
     border-bottom: 2px solid transparent;
 
 }
@@ -140,12 +156,10 @@
 }
 #footer{
     background-color: #212121;
-<<<<<<< HEAD
     margin-top: 604px;
     height: 62px;
-}
-=======
-    margin-top: 788px;
+    margin-top: 450px;
     height: 82px;
+
 }
->>>>>>> 68b1c8f60283f2e61c94f0dc2c0d606b1387f852
+

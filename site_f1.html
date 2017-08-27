@@ -7,9 +7,15 @@
         <link rel="stylesheet" type="text/css" href="site_f1.css">
         <script src="jquery-3.1.1.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src=""></script>
     </head>
     <body>
         <nav id ="navegador_superior">   
+            <div id="contato">
+                <button id="b_icone"><i class="glyphicon glyphicon-envelope"></i></button>
+                <a>Contact Us</a>
+            </div>
                 
             <div id="buscador">
                 <button id="b_buscar" ><i class="fa fa-search"></i></button>
@@ -20,13 +26,13 @@
                 <img src="./imagens/logo.png" alt="">
         </div> 
     <div id="menu_bts">
-            <button id="bt1">menu1</button>
-            <button id="bt2">menu2</button>
-            <button id="bt3">menu3</button>
-            <button id="bt4">menu4</button>
-            <button id="bt5">menu5</button>
-            <button id="bt6">menu6</button>
-            <button id="bt7">menu7</button>
+            <button id="bt1">Historical photos</button>
+            <button id="bt2">Race Schedule</button>
+            <button id="bt3">Race Results</button>
+            <button id="bt4">Qualifying Results</button>
+            <button id="bt5">Standings</button>
+            <button id="bt6">Driver Information</button>
+            <button id="bt7">Season List</button>
     </div>
     <div id="slide_show">
         <button id="b_esq"><i class="fa fa-chevron-left"></i></button>
@@ -44,7 +50,16 @@
             <div class="cir3"></div>
         </div>
         <footer id="footer">
-                dsdaas
+                <p>Desenvolvedores</p>
+                <ul>
+                    <li>
+                    </li>
+                    <li>
+                    </li>
+                    <li>
+
+                    </li>
+                </ul>
         </footer>
     <script>
         var i = 0;
@@ -131,6 +146,76 @@
             $(".cir3").css("background-color","grey");
             $(".cir1").css("background-color","lightgrey");
             $(".cir2").css("background-color","lightgrey");
+        });
+        $("#bt2").click(function(){
+            $("#bt1").css("font-weight","lighter");
+            $("#bt3").css("font-weight","lighter");
+            $("#bt4").css("font-weight","lighter");
+            $("#bt5").css("font-weight","lighter");
+            $("#bt6").css("font-weight","lighter");
+            $("#bt7").css("font-weight","lighter");
+            $("#bt2").css("font-weight","bold");
+            $("#bt2").css("color","black");
+        });
+        $("#bt1").click(function(){
+            $("#bt2").css("font-weight","lighter");
+            $("#bt3").css("font-weight","lighter");
+            $("#bt4").css("font-weight","lighter");
+            $("#bt5").css("font-weight","lighter");
+            $("#bt6").css("font-weight","lighter");
+            $("#bt7").css("font-weight","lighter");
+            $("#bt1").css("font-weight","bold");
+            $("#bt1").css("color","black");
+        });
+        $("#bt3").click(function(){
+            $("#bt2").css("font-weight","lighter");
+            $("#bt1").css("font-weight","lighter");
+            $("#bt4").css("font-weight","lighter");
+            $("#bt5").css("font-weight","lighter");
+            $("#bt6").css("font-weight","lighter");
+            $("#bt7").css("font-weight","lighter");
+            $("#bt3").css("font-weight","bold");
+            $("#bt3").css("color","black");
+        });
+        $("#bt4").click(function(){
+            $("#bt3").css("font-weight","lighter");
+            $("#bt1").css("font-weight","lighter");
+            $("#bt2").css("font-weight","lighter");
+            $("#bt5").css("font-weight","lighter");
+            $("#bt6").css("font-weight","lighter");
+            $("#bt7").css("font-weight","lighter");
+            $("#bt4").css("font-weight","bold");
+            $("#bt4").css("color","black");
+        });
+        $("#bt5").click(function(){
+            $("#bt3").css("font-weight","lighter");
+            $("#bt1").css("font-weight","lighter");
+            $("#bt2").css("font-weight","lighter");
+            $("#bt4").css("font-weight","lighter");
+            $("#bt6").css("font-weight","lighter");
+            $("#bt7").css("font-weight","lighter");
+            $("#bt5").css("font-weight","bold");
+            $("#bt5").css("color","black");
+        });
+        $("#bt6").click(function(){
+            $("#bt3").css("font-weight","lighter");
+            $("#bt1").css("font-weight","lighter");
+            $("#bt2").css("font-weight","lighter");
+            $("#bt4").css("font-weight","lighter");
+            $("#bt5").css("font-weight","lighter");
+            $("#bt7").css("font-weight","lighter");
+            $("#bt6").css("font-weight","bold");
+            $("#bt6").css("color","black");
+        });
+        $("#bt7").click(function(){
+            $("#bt3").css("font-weight","lighter");
+            $("#bt1").css("font-weight","lighter");
+            $("#bt2").css("font-weight","lighter");
+            $("#bt4").css("font-weight","lighter");
+            $("#bt5").css("font-weight","lighter");
+            $("#bt6").css("font-weight","lighter");
+            $("#bt7").css("font-weight","bold");
+            $("#bt7").css("color","black");
         });
     </script>
     </body>
