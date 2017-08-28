@@ -154,6 +154,9 @@
     display: none;
 
 }
+#parser{
+    display: none;
+}
 #footer{
     background-color: #212121;
     margin-top: 604px;
