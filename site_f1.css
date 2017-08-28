@@ -22,7 +22,7 @@
     border-style: none;
 }
 #navegador_superior{
-    background-color: #212121ff;    
+    background-color: #212121;    
     height: 30px;
     position: relative;
 }
@@ -48,7 +48,7 @@
    border-style: none;
    height: 18px;
    width: 55px; 
-   transition: width 1s;
+   transition: width 0.5s;
    padding-left: 10px;
 }
 #barra:focus{
@@ -97,6 +97,7 @@
 #img1,#img2,#img3{ 
     position: absolute;
     z-index: -1;
+    height: 50vh;
  
 }
 .bolas{
@@ -119,9 +120,10 @@
 }
 #slide_show{
     position: relative;
-    top: 100px;
-    right: 110px;
+    top: 150px;
+    right: 80px;
     height: 200px;
+
 
 }
 .cir3{
@@ -135,16 +137,15 @@
     width: 45px;
     font-size: 22px;    
     border: none;
-    margin-top: 130px;
     cursor: pointer;  
     position: absolute;
-    margin-top: 250px;
+    margin-top: 200px;
     box-shadow: -3px 0px 30px 1px #212121;
     outline:none;
    
 }
 #b_dir{
-    margin-left: 1235px;
+    margin-left: 1082px;
     border-bottom: 2px solid transparent;
 
 }
@@ -159,9 +160,8 @@
 }
 #footer{
     background-color: #212121;
-    margin-top: 604px;
-    height: 62px;
-    margin-top: 450px;
+    margin-top: 65.99vh;
+    
     height: 82px;
 
 }

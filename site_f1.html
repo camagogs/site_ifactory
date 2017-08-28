@@ -50,6 +50,26 @@
             <div class="cir3"></div>
         </div>
         <div><p id="parser"></p></div>
+
+        <div id="season">
+            <table style="width:100%">
+                <tr>
+                  <th>Season</th>
+                  <th>Information</th> 
+                  
+                </tr>
+                <tr>
+                  <td><a href="/api/1950">1950</a></td>
+                  <td><a href="/api/1951"></a></td> 
+                  
+                </tr>
+                <tr>
+                  <td><a href="http://en.wikipedia.org/wiki/1950_Formula_One_season"></a></td>
+                  <td><a href="http://en.wikipedia.org/wiki/1951_Formula_One_season"></a></td> 
+                </tr>
+              </table>
+        </div>
+
         <footer id="footer">
                 <p>Desenvolvedores</p>
                 <ul>
@@ -158,7 +178,7 @@
             $("#bt7").css("font-weight","lighter");
             $("#bt2").css("font-weight","bold");
             $("#bt2").css("color","black");
-            x = 1;
+        
         });
         $("#bt1").click(function(){
             $("#bt2").css("font-weight","lighter");
@@ -169,7 +189,9 @@
             $("#bt7").css("font-weight","lighter");
             $("#bt1").css("font-weight","bold");
             $("#bt1").css("color","black");
-            x = 2;
+            $("#slide_show").show();
+            $(".bolas").show();
+            $("#parser").hide(); 
         });
         $("#bt3").click(function(){
             $("#bt2").css("font-weight","lighter");
@@ -180,7 +202,7 @@
             $("#bt7").css("font-weight","lighter");
             $("#bt3").css("font-weight","bold");
             $("#bt3").css("color","black");
-            x = 3; 
+            
         });
         $("#bt4").click(function(){
             $("#bt3").css("font-weight","lighter");
@@ -225,6 +247,7 @@
             $("#bt7").css("font-weight","bold");
             $("#bt7").css("color","black");
             $("#slide_show").hide();
+            $(".bolas").hide();
             $("#parser").show();  
         });
         $.ajax({
@@ -233,6 +256,7 @@
             success: function(data){
                 recebe = data;
               console.log("sucess");
+              console.log(recebe);
               $("#parser").html(recebe);
               }
             })
