@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./css/site_f1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>Drivers</title>
+</head>
+<body>
+    <nav id ="navegador_superior">   
+        <div id="contato">
+            <button id="b_icone"><i class="glyphicon glyphicon-envelope"></i></button>
+            <a>Contact Us</a>
+        </div>
+            
+        <div id="buscador">
+            <button id="b_buscar" ><i class="fa fa-search"></i></button>
+            <input id="barra" type="text" placeholder="search">
+        </div>
+    </nav>
+    <div id ="logo_im">
+            <img src="./imagens/logo.png" alt="">
+    </div> 
+    <div id="menu_bts">
+        <button id="bt1">Historical photos</button>
+        <button id="bt2">Race Schedule</button>
+        <button id="bt3">Race Results</button>
+        <button id="bt4">Qualifying Results</button>
+        <button id="bt5">Standings</button>
+        <button id="bt6" ><a href="site_f2.html">Driver Information</a></button>
+        <button id="bt7" ><a href="site_f3.html">Season List</a></button>
+    </div>
+    <div>
+        <button onclick="javascript:tst();">Carregar resultado</button>
+        <div>
+                <p>Resultado</p>
+                <table id="resultado"  border='1'>
+                  <colgroup span="4"></colgroup>
+                  <tr>
+                    <th>Driver ID</th>
+                    <th>Url</th>
+                    
+                  </tr>
+                  </tbody>
+                </table>
+                
+        </div>
+    </div>
+    <footer id="footer">
+        <p>Desenvolvedores</p>
+        <ul>
+            <li>
+            </li>
+            <li>
+            </li>
+            <li>
+
+            </li>
+        </ul>
+</footer>
+<script src="jquery-3.1.1.min.js"></script>   
+    <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/site_f2.js"></script>
+</body>
+</html>
