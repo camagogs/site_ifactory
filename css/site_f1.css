@@ -97,13 +97,13 @@
 #img1,#img2,#img3{ 
     position: absolute;
     z-index: -1;
-    height: 50vh;
- 
+    max-width: 80vw;
+    margin-left: 52px;
 }
 .bolas{
-    margin-right: 600px;
-    margin-top: 20px;
-
+    max-width: 70px;
+    margin: auto;
+    margin-top: 62vh;
 }
 .cir1,.cir2,.cir3{
     height: 11px;
@@ -114,17 +114,13 @@
     float: right;
     margin: 5px;
     cursor: pointer;
-    display: fixed;
-    margin-top: 410px;
-      
+   
 }
 #slide_show{
     position: relative;
     top: 150px;
-    right: 80px;
-    height: 200px;
-
-
+    margin: auto;
+    right: 60px;
 }
 .cir3{
     background-color: grey;
@@ -142,12 +138,12 @@
     margin-top: 200px;
     box-shadow: -3px 0px 30px 1px #212121;
     outline:none;
-   
+    
 }
 #b_dir{
-    margin-left: 1082px;
+    
     border-bottom: 2px solid transparent;
-
+    right: 10px;
 }
 
 
@@ -158,11 +154,25 @@
 #parser{
     display: none;
 }
+
+#tabela_drivers{
+    margin:auto;
+    margin-top: 150px; 
+    max-width: 150px;
+}
+#resultado{
+    width: 250px;
+}
+
 #footer{
     background-color: #212121;
-    margin-top: 65.99vh;
-    
-    height: 82px;
-
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;     
+    text-align: center;
+    color: white;
 }
+
 
