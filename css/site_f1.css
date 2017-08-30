@@ -10,21 +10,22 @@
     cursor: pointer;
 }
 #contato a{
-    color: white;
+    color: #e5751f;
     top: 5px;
 }
 #contato i {
-    color: white;
+    color: #e5751f;
 }
 #b_icone{
     float: right;
-    background-color: #212121;
+    background-color: #403531;
     border-style: none;
 }
 #navegador_superior{
-    background-color: #212121;    
+    background-color: #403531;    
     height: 30px;
     position: relative;
+    box-shadow: 0px 2px 5px #888888;
 }
 #buscador{
     float: right;
@@ -33,18 +34,18 @@
 
 }
 #b_buscar{
-    background-color: white;
+    background-color: #e5751f;
     width: 30px;
     border-style: none;
     float: right;     
     margin-top: 1px;
     height: 18px;
-    border-color:  #212121ff;   
+    border-color:  #e5751f;   
 
 }
 
 #barra{
-   border-color: white;
+   border-color: #e5751f;
    border-style: none;
    height: 18px;
    width: 55px; 
@@ -54,13 +55,22 @@
 #barra:focus{
     width: 200px;
     outline: none;
+    
 }
 #logo_im{
        float: left;
-       width: 50px;    
+       width: 55px;    
        margin-left: 90px; 
 }
+#logo{
+    height: 90px;
+    margin-top: 10px;
+}
 
+#menu_bts a{
+    color: #403531;
+    style: none; 
+}
 #menu_bts{
     margin-top: 40px;
     float: right;
@@ -83,12 +93,12 @@
 }
 #bt1:hover,#bt2:hover,#bt3:hover,#bt4:hover,#bt5:hover,#bt6:hover,#bt7:hover{
     
-    border-bottom: 4px solid #212121;
+    border-bottom: 4px solid #e5751f;
 }
 
 #bt1{
     font-weight: bold;
-    border-bottom-color: black;
+    border-bottom-color: #403531;
 }
 #imagens{
     margin: auto;
@@ -99,6 +109,9 @@
     z-index: -1;
     max-width: 80vw;
     margin-left: 52px;
+    border: 2px solid #e5751f;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px #888888;
 }
 .bolas{
     max-width: 70px;
@@ -114,29 +127,34 @@
     float: right;
     margin: 5px;
     cursor: pointer;
-   
+    margin-top: 60%;
 }
 #slide_show{
     position: relative;
     top: 150px;
     margin: auto;
     right: 60px;
+    
 }
+
 .cir3{
-    background-color: grey;
+    background-color: #403531;
 }
 .cir2,.cir1{
-    background-color: lightgrey;
+    background-color: #A99188;
 }
 #b_esq,#b_dir{
     height: 45px;
     width: 45px;
     font-size: 22px;    
-    border: none;
+    border-radius: 22px;
+    border-bottom:  solid;
+    color: #e5751f;
+    background-color: #403531;
     cursor: pointer;  
     position: absolute;
     margin-top: 200px;
-    box-shadow: -3px 0px 30px 1px #212121;
+    
     outline:none;
     
 }
@@ -165,12 +183,12 @@
 }
 
 #footer{
-    background-color: #212121;
+    background-color: #403531;
     position: absolute;
     right: 0;
     bottom: 0;
     left: 0;
-    padding: 1rem;     
+    box-shadow: 0px -2px 5px #888888;
     text-align: center;
     color: white;
 }
