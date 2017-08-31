@@ -61,6 +61,7 @@
        float: left;
        width: 55px;    
        margin-left: 90px; 
+       cursor: pointer;
 }
 #logo{
     height: 90px;
@@ -86,20 +87,14 @@
     cursor: pointer;
     outline: none;
     padding-bottom: 8px; 
+    
 }
 
 #bt2,#bt3,#bt4,#bt5,#bt6,#bt7{
     color: #565252; 
 }
-#bt1:hover,#bt2:hover,#bt3:hover,#bt4:hover,#bt5:hover,#bt6:hover,#bt7:hover{
-    
-    border-bottom: 4px solid #e5751f;
-}
 
-#bt1{
-    font-weight: bold;
-    border-bottom-color: #403531;
-}
+
 #imagens{
     margin: auto;
 
@@ -135,6 +130,12 @@
     margin: auto;
     right: 60px;
     
+}
+#apresenta{
+    max-width: 500px;
+    margin: auto;
+    text-align: justify;
+    margin-top: 15vh;
 }
 
 .cir3{

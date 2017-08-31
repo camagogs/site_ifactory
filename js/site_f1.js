@@ -67,6 +67,7 @@
             $(".cir1").css("background-color","grey");
             $(".cir2").css("background-color","lightgrey");
             $(".cir3").css("background-color","lightgrey");
+        
         });
         $(".cir2").click(function () {
             $("#img1").fadeOut();
@@ -92,7 +93,14 @@
             $("#bt6").css("font-weight","lighter");
             $("#bt7").css("font-weight","lighter");
             $("#bt2").css("font-weight","bold");
-            $("#bt2").css("color","black");
+            $("#bt2").css("color","#403531");
+            $("#bt2").css("border-bottom","4px solid #e5751f")
+            $("#bt1").css("border-style", "none");
+            $("#bt3").css("border-style", "none");
+            $("#bt4").css("border-style", "none");
+            $("#bt5").css("border-style", "none");
+            $("#bt6").css("border-style", "none");
+            $("#bt7").css("border-style", "none");
         
         });
         $("#bt1").click(function(){
@@ -104,9 +112,14 @@
             $("#bt7").css("font-weight","lighter");
             $("#bt1").css("font-weight","bold");
             $("#bt1").css("color","black");
-            $("#slide_show").show();
-            $(".bolas").show();
-            $("#parser").hide(); 
+            $("#bt1").css("border-bottom","4px solid #e5751f")
+            $("#bt2").css("border-style", "none");
+            $("#bt2").css("border-style", "none");
+            $("#bt3").css("border-style", "none");
+            $("#bt4").css("border-style", "none");
+            $("#bt5").css("border-style", "none");
+            $("#bt6").css("border-style", "none");
+            $("#bt7").css("border-style", "none");
         });
         $("#bt3").click(function(){
             $("#bt2").css("font-weight","lighter");
@@ -117,7 +130,13 @@
             $("#bt7").css("font-weight","lighter");
             $("#bt3").css("font-weight","bold");
             $("#bt3").css("color","black");
-            
+            $("#bt3").css("border-bottom","4px solid #e5751f")
+            $("#bt1").css("border-style", "none");
+            $("#bt2").css("border-style", "none");
+            $("#bt4").css("border-style", "none");
+            $("#bt5").css("border-style", "none");
+            $("#bt6").css("border-style", "none");
+            $("#bt7").css("border-style", "none");
         });
         $("#bt4").click(function(){
             $("#bt3").css("font-weight","lighter");
@@ -128,7 +147,13 @@
             $("#bt7").css("font-weight","lighter");
             $("#bt4").css("font-weight","bold");
             $("#bt4").css("color","black");
-            x = 4;
+            $("#bt4").css("border-bottom","4px solid #e5751f")
+            $("#bt1").css("border-style", "none");
+            $("#bt3").css("border-style", "none");
+            $("#bt2").css("border-style", "none");
+            $("#bt5").css("border-style", "none");
+            $("#bt6").css("border-style", "none");
+            $("#bt7").css("border-style", "none");
         });
         $("#bt5").click(function(){
             $("#bt3").css("font-weight","lighter");
@@ -139,7 +164,13 @@
             $("#bt7").css("font-weight","lighter");
             $("#bt5").css("font-weight","bold");
             $("#bt5").css("color","black");
-            x = 5;
+            $("#bt5").css("border-bottom","4px solid #e5751f")
+            $("#bt1").css("border-style", "none");
+            $("#bt3").css("border-style", "none");
+            $("#bt4").css("border-style", "none");
+            $("#bt2").css("border-style", "none");
+            $("#bt6").css("border-style", "none");
+            $("#bt7").css("border-style", "none");
         });
         $("#bt6").click(function(){
             $("#bt3").css("font-weight","lighter");
@@ -150,7 +181,13 @@
             $("#bt7").css("font-weight","lighter");
             $("#bt6").css("font-weight","bold");
             $("#bt6").css("color","black");
-            x = 6;
+            $("#bt2").css("border-bottom","4px solid #e5751f")
+            $("#bt1").css("border-style", "none");
+            $("#bt3").css("border-style", "none");
+            $("#bt4").css("border-style", "none");
+            $("#bt5").css("border-style", "none");
+            $("#bt2").css("border-style", "none");
+            $("#bt7").css("border-style", "none");
         });
         $("#bt7").click(function(){
             $("#bt3").css("font-weight","lighter");
@@ -161,11 +198,35 @@
             $("#bt6").css("font-weight","lighter");
             $("#bt7").css("font-weight","bold");
             $("#bt7").css("color","black");
-            $("#slide_show").hide();
-            $(".bolas").hide();
-            $("#parser").show();  
+            $("#bt2").css("border-bottom","4px solid #e5751f")
+            $("#bt1").css("border-style", "none");
+            $("#bt3").css("border-style", "none");
+            $("#bt4").css("border-style", "none");
+            $("#bt5").css("border-style", "none");
+            $("#bt6").css("border-style", "none");
+            $("#bt2").css("border-style", "none");
+          
         });
-  
+        
+        $("#logo_im").click(function (){
+            $("#bt3").css("font-weight","lighter");
+            $("#bt1").css("font-weight","lighter");
+            $("#bt2").css("font-weight","lighter");
+            $("#bt4").css("font-weight","lighter");
+            $("#bt5").css("font-weight","lighter");
+            $("#bt6").css("font-weight","lighter");
+            $("#bt7").css("font-weight","lighter");
+            $("#bt2").css("border-none","none");
+            $("#bt1").css("border-style", "none");
+            $("#bt3").css("border-style", "none");
+            $("#bt4").css("border-style", "none");
+            $("#bt5").css("border-style", "none");
+            $("#bt6").css("border-style", "none");
+            $("#bt7").css("border-style", "none");
+            
+        });
+        
+
         $.ajax({
             type:"GET",
             url: "http://ergast.com/api/f1/drivers.json?callback=myParser",
